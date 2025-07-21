@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MimSite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+        h1, h2, h3 {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .card-glass:hover {
+            background: rgba(255, 255, 255, 0.7);
+            color:black;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <header class="glassmorphism sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                <h2><span class="text-green-600">Mim</span>Site</h2>
+            </div>
+             <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section class="text-center py-16 md:py-24">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Unlock Peak <span class="text-green-500">Minecraft</span> Performance</h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">Your ultimate guide to optimizing Minecraft for maximum FPS, from legacy PvP to the latest updates.</p>
+            <a href="#pvp-clients" class="mt-8 inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-600 transition-transform hover:scale-105">Get Started</a>
+        </section>
+
+        <section id="pvp-clients" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-300 mb-12">1.8 PvP Clients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
+
+                <a href="https://www.lunarclient.com/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3 drop-shadow-lg">Lunar Client</h3>
+                    <img src="https://avatars.githubusercontent.com/u/57332930?s=280&v=4" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">Probably the most popular and most used client out there. From the creators of CheatBreaker. Lunar Client provides a modern and pleasing aesthetic.</p>
+                </div>
+                </a>
+
+                <a href="https://www.badlion.net/minecraft-client">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Badlion Client</h3>
+                    <img src="https://avatars.githubusercontent.com/u/11240281?s=280&v=4" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">Direct competitor to Lunar Client for a long time. Badlion has been out for a long time and provides a lot of FPS Boost, thanks to its own module named "Betterframes".</p>
+                </div>
+                </a>
+
+                <a href="https://feathermc.com/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Feather Client</h3>
+                    <img src="https://yt3.googleusercontent.com/Q2kY9JuLTL6PUsvJIK1oNFRA1Au8rRaY6Kp5Fqu0GRdDUfbhKVZtXxOnwktZVgGuXbbQcn3OkA=s900-c-k-c0x00ffffff-no-rj" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">A forge based Minecraft client which created a lot of hype (and controversy!) upon its arrival. Since it's forge-based, you can add your own modifications to the client.</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
+
+                <a href="https://www.labymod.net/en">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">LabyMod</h3>
+                    <img src="https://yt3.googleusercontent.com/BCxZTLsMwxj81r75MwUDiSj6rPZVMXw_pNJiDoxiR7qvZTol5pGb1EEtGnaqTKHy6awsIisHEg=s900-c-k-c0x00ffffff-no-rj" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">A classic client which supports forge mods and comes with a plethora of modifciations. You can also browse and install modifications directly within the client.</p>
+                </div>
+                </a>
+
+                <a href="https://cheatbreaker.net/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">CheatBreaker</h3>
+                    <img src="https://avatars.githubusercontent.com/u/20884607?s=280&v=4" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">CheatBreaker is an old client which provides an extremely good FPS boost and was also the first client to focus on client-side anticheats.</p>
+                </div>
+                </a>
+
+                <a href="https://silentclient.net/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Silent Client</h3>
+                    <img src="https://avatars.githubusercontent.com/u/119357237?s=280&v=4" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">A relatively new client with a new aesthetic. Silent Client features a lot of modifications and also gives a fairly good FPS Boost, comparable to big names.</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
+
+                <a href="https://https://alpineclient.com/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Alpine Client</h3>
+                    <img src="https://avatars.githubusercontent.com/u/133193945?s=200&v=4" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">Another new addition to the Minecraft client-roster. Alpine client features a modern graphical user interface along with optimizations to boost the frames.</p>
+                </div>
+                </a>
+
+                <a href="Files/PixelClient.zip">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Pixel Client</h3>
+                    <img src="https://pbs.twimg.com/profile_images/1230882058685292544/SZ-dD7gE_400x400.jpg" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">Pixel Client is an extremely old client which is hardly available on the internet today. It did not have any groundbreaking features but was one of the Minecraft clients to exist.</p>
+                </div>
+                </a>
+
+                <a href="Files/MelonClient.zip">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Melon Client</h3>
+                    <img src="https://pbs.twimg.com/profile_images/1487942659784204290/jZJwrycC_400x400.jpg" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">Melon Client is a peculiar client which was never fully released. The beta was leaked by one of the developers and the development had halted for the client.</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
+
+                <a href="https://mysterymod.net/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">MysteryMod</h3>
+                    <img src="https://avatars.githubusercontent.com/u/65445602?s=200&v=4" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">MysteryMod is a client similar to LabyMod which once came out but never really stood out much. It has a similar layout to LabyMod. It also offers a cosmetic system.</p>
+                </div>
+                </a>
+
+                <a href="https://batmod.com">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">BatMod</h3>
+                    <img src="https://batmod.com/img/logo.svg" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">BatMod is an old Minecraft client which has a lot of modifications. It also provides a decent FPS Boosts which is comparable to its competitors. It also has a Spotify module but it doesn't seem to work.</p>
+                </div>
+                </a>
+
+                <a href="https://www.salwyrr.com/">
+                <div class="card-glass rounded-xl p-6 items-center flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-500 mb-3">Salwyrr Client</h3>
+                    <img src="https://img.icons8.com/?size=192&id=7jXFhyDwQMnr&format=png" width="100px" class="rounded-full mb-3">
+                    <p class="text-gray-900">Salwyrr was once the go-to client for cracked Minecraft users, until they shut down their support for cracked accounts. It features a different layout than other clients.</p>
+                </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 border-t border-gray-300 mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+            <p>&copy; 2025 MimSite. A fan project to help the Minecraft community.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.js"></script>
+
+  <script>
+    const myAtropos = Atropos({
+      el: '.atropos',
+      activeOffset: 40,
+      shadow: true,
+      shadowScale: 1.05,
+      highlight: true,
+      // Full list of options here: https://atroposjs.com/docs
+    });
+  </script>
+
+</body>
+</html>
