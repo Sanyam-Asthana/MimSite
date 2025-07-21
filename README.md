@@ -1,2 +1,3 @@
 # MimSite
-Website for Minecraft PvP Clients
+Website for downloading Minecraft PvP Clients. <br>
+https://mimsite.netlify.app
